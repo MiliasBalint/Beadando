@@ -5,8 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MiliasBalint_Beadando"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        FontSize="12">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="185"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="185"/>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="15"/>
+
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="20"/>
+        </Grid.RowDefinitions>
+
+        <!--Szamla 1-->
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="Számla 1"/>
+        <TextBlock Grid.Column="1" Grid.Row="2" Text="Számla tulajdonos:"/>
+        <TextBox x:Name="T1" IsReadOnly="True"  Grid.Row="2" Grid.Column="2"  Margin="0,0,0,0"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" Text="Számla egyenlege:"/>
+        <TextBox  x:Name="E1" IsReadOnly="True"  Grid.Row="3" Grid.Column="2" Margin="0,0,0,0"/>
+        <TextBlock Grid.Column="3" Grid.Row="3" Text="Ft"/>
+        <TextBlock Grid.Column="1" Grid.Row="5" Text="Beviteli mező:"/>
+        <TextBox x:Name="B1" Grid.Row="5" Grid.Column="2" />
+        <TextBlock Grid.Column="3" Grid.Row="5" Text="Ft" />
+
+        <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+            <Button Content="Feltöltés" x:Name="F1" Margin="4" Padding="9,0,9,0" Width="auto" Click="F1_Click"  />
+            <Button Content="Utalás" x:Name="U1"  Margin="4" Padding="9,0,9,0" Width="auto" Click="U1_Click" />
+            <Button Content="Kivét" x:Name="K1"  Margin="4" Padding="9,0,9,0" Width="auto" Click="K1_Click"/>
+            <Button Content="Tulaj név váltás" x:Name="NV1" Padding="9,0,9,0"  Margin="4" Width="auto" Click="NV1_Click"/>
+        </StackPanel>
+
+
+        <!--Szamla 2-->
+        <TextBlock Grid.Column="5" Grid.Row="1" Text="Számla 2"/>
+        <TextBlock Grid.Column="5" Grid.Row="2" Text="Számla tulajdonos:"/>
+        <TextBox x:Name="T2" IsReadOnly="True"  Grid.Row="2" Grid.Column="6" Margin="0,0,0,0"/>
+        <TextBlock Grid.Column="5" Grid.Row="3" Text="Számla egyenlege:"/>
+        <TextBox  x:Name="E2" IsReadOnly="True"   Grid.Row="3" Grid.Column="6" Margin="0,0,0,0"/>
+        <TextBlock Grid.Column="7" Grid.Row="3" Text="Ft"/>
+        <TextBlock Grid.Column="5" Grid.Row="5" Text="Beviteli mező:"/>
+        <TextBox x:Name="B2" Grid.Row="5" Grid.Column="6" Margin="0,0,0,0"/>
+        <TextBlock Grid.Column="7" Grid.Row="5" Text="Ft" Margin="0,0,9,0"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="6" Grid.Column="5" Grid.ColumnSpan="3" HorizontalAlignment="Center">
+            <Button Content="Feltöltés" x:Name="F2" Margin="4,4,4,0" Padding="9,0,9,0" Width="auto" Click="F2_Click" Height="22" VerticalAlignment="Top"/>
+            <Button Content="Utalás" x:Name="U2"  Margin="4" Padding="9,0,9,0" Width="auto" Click="U2_Click" />
+            <Button Content="Kivét" x:Name="K2"  Margin="4" Padding="9,0,9,0" Width="auto" Click="K2_Click"/>
+            <Button Content="Tulaj név váltás" x:Name="NV2" Padding="9,0,9,0"  Margin="4" Width="auto" Click="NV2_Click"/>
+        </StackPanel>
     </Grid>
 </Window>

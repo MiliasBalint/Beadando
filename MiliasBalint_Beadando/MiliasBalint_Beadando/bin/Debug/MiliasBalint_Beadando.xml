@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MiliasBalint_Beadando</name>
+    </assembly>
+    <members>
+        <member name="P:MiliasBalint_Beadando.Szamla.Egyenleg">
+             <summary>
+             Egyenleget tároló változó
+             </summary>
+            <value>
+             Int változó
+             </value>
+        </member>
+        <member name="P:MiliasBalint_Beadando.Szamla.Tulaj">
+            <summary>
+            Tulaj nevét tároló változó
+            </summary>
+            <value>
+            String változó
+            </value>
+            
+        </member>
+        <member name="M:MiliasBalint_Beadando.Szamla.#ctor(System.String,System.Int32)">
+            <summary>
+            Konstruktor, amely beállítja az adatokat példányosításkor
+            </summary>
+            <param name=" egyenleg">Egyenleg értéke</param>
+            <param name=" tulaj">Tulaj neve</param>
+        </member>
+        <member name="T:MiliasBalint_Beadando.Uzenet">
+            <summary>
+            Interaction logic for Uzenet.xaml
+            </summary>
+            <summary>
+            Uzenet
+            </summary>
+        </member>
+        <member name="M:MiliasBalint_Beadando.Uzenet.#ctor(System.String)">
+            <summary>
+            Ez a hiba üzenetet megjelenító Uzenet ablak konstruktora, amely megjeleníti az ablakot
+            </summary>
+        </member>
+        <member name="M:MiliasBalint_Beadando.Uzenet.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MiliasBalint_Beadando.App">
+            <summary>
+            Interaction logic for App.xaml
+            </summary>
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:MiliasBalint_Beadando.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:MiliasBalint_Beadando.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+        <member name="T:MiliasBalint_Beadando.MainWindow">
+            <summary>
+            Interaction logic for MainWindow.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="F:MiliasBalint_Beadando.MainWindow.szamlak">
+            <summary>
+            Egy statikus lista, amelyben a 2 számla található
+            </summary>
+        </member>
+        <member name="M:MiliasBalint_Beadando.MainWindow.#ctor">
+            <summary>
+            Ez a MainWindow konstruktora, amely megjeleníti az ablakot
+            </summary>
+        </member>
+        <member name="M:MiliasBalint_Beadando.MainWindow.F1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ez a metódus tartozik a bal oldali Feltöltés gombhoz. Ellenőrzés után frissíti a számla (1) egyenlegét a beírt összeggel 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MiliasBalint_Beadando.MainWindow.U1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ez a metódus tartozik a bal oldali Utalás gombhoz. Ellenőrzés után az 1-es számláról átutalja az adott összeget a 2-esre. 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MiliasBalint_Beadando.MainWindow.K1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ez a metódus tartozik a bal oldali Kivétel gombhoz. A bemenet ellenőrzése után az adott összeggel csökkenti az 1-es számla egyenlegét
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MiliasBalint_Beadando.MainWindow.NV1_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ez a metódus tartozik a bal oldali Tulaj név váltás gombhoz. Ellenőrzi, hogy írt-e valamit a felhasználó a bemeneti blokkba és
+            ha igen akkor beállítja az új nevet az 1-es számlán
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MiliasBalint_Beadando.MainWindow.F2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ez a metódus tartozik a jobb oldali Feltöltés gombhoz. Ellenőrzés után frissíti a számla (2) egyenlegét a beírt összeggel 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MiliasBalint_Beadando.MainWindow.U2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ez a metódus tartozik a jobb oldali Utalás gombhoz. Ellenőrzés után az 1-es számláról átutalja az adott összeget a 2-esre. 
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MiliasBalint_Beadando.MainWindow.K2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ez a metódus tartozik a jobb oldali Kivétel gombhoz. A bemenet ellenőrzése után az adott összeggel csökkenti a 2-es számla egyenlegét
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MiliasBalint_Beadando.MainWindow.NV2_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Ez a metódus tartozik a jobb oldali Tulaj név váltás gombhoz. Ellenőrzi, hogy írt-e valamit a felhasználó a bemeneti blokkba és
+            ha igen akkor beállítja az új nevet a 2-es számlán
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:MiliasBalint_Beadando.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:MiliasBalint_Beadando.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:MiliasBalint_Beadando.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:MiliasBalint_Beadando.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+    </members>
+</doc>
